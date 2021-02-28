@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Covid-19</string>
+    <string name="mask">Wear a mask over your nose and mouth</string>
+    <string name="stay">Stay 6 feet away from others</string>
+    <string name="wash">Wash your hands often</string>
+    <string name="cough">Cover coughs and sneezes</string>
+    <string name="clean">Clean and disinfect</string>
+    <string name="health">Monitor Your Health Daily</string>
+</resources>

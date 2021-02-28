@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cav_item"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="#ECECEC"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            >
+
+            <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+                android:id="@+id/img_flag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/eg"
+                android:scaleType="fitXY"
+                app:siShape="@drawable/flag_shape"
+                app:siSquare="true"
+            />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="8dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_country_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="Egypt"
+                    android:textSize="20sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_cases"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Today Cases:"
+                    android:textSize="14sp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_deaths"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Today Deaths:"
+                    android:textSize="14sp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:padding="4dp"
+            android:text="latest Update: 20/01/2020"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:textStyle="italic"
+            android:textSize="12sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            />
+    </androidx.cardview.widget.CardView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
